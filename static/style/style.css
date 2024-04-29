@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@800&family=Caveat&family=Dosis:wght@700&family=IBM+Plex+Serif:ital,wght@1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+main{
+    background-image:url('bgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10em;
+    background-color: rgb(240, 243, 247);
+    width: 100vw;
+    height: auto;
+}
+
+footer{
+    font-family:  Caveat;
+    display: flex;
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+}
+
+footer>div{
+    margin: auto;
+}
+
+nav{
+    font-family: 'Dosis';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 1em;
+
+}
+
+li{
+    list-style: none;
+    font-family: 'Dosis';
+}
+
+a{
+    text-decoration: none;
+    color: rgb(23, 31, 26);
+}
+
+#inpSearch{
+    margin-left: 4vw;
+    padding-left: 2vw;
+    width: 20vw;
+    height: 5vh;
+    border: 0px;
+    border-radius: 2px;
+}
+
+#searchIcon{
+    border: 0px;
+    position: relative;
+    left: 0.5vw;
+    top: 2px;
+    height: 5vh;
+    width: auto;
+}
+
+#searchForm{
+    height: 5vh;
+    width:27vw;
+    display: flex;
+}
+
+
+#insideContent{
+    margin-top:20vh;
+    margin-left: 10vw;
+    margin-bottom: 20vh;
+    width:50vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: Urbanist;
+}
+
+#insideContent > a >button{
+    border-radius: 100vw;
+    border: 0px;
+    width: 20vw;
+    height: 5vh;
+    background-color: #fff;
+}
+
+button{
+    border-radius: 100vw;
+    border: 0px;
+    width: 20vw;
+    height: 5vh;
+    background-color: #fff;
+}
+
+ul > li{
+    transition: all 1s ease;
+}
+
+ul > div{
+    position: relative;
+    top: 5vw;
+    right: 73px;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+}
+
+ul > li:hover{
+    ul > div{
+        width: 60px;
+        
+    }
+}
+
+#logoimg{
+    width: 7vw;
+    height: auto;
+}
+
+
+.objimg{
+    width: 4vw;
+    height: auto;
+}
+
+#data{
+    margin-left: 10vw;
+    margin-top: 10vh;
+    flex-direction: column;
+    width:50vw;
+    
+}
+
+#mainresults{
+    background-image: linear-gradient(left, #E2E6EF ,#EFF4F8);
+}
+
+#imageForm{
+    position: relative;
+    bottom: 10vh;
+    left:10vw;
+    display: flex;
+    flex-direction: column;
+}
+input[type="file"]::file-selector-button{
+    border-radius: 2px;
+    border: 2px solid rgb(0, 128, 60);
+    margin: 1em;
+    width: 10vw;
+    height: 10vh;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#acc{
+    position: relative;
+    left: 4.5em;
+    bottom: 2em;
+    font-family: Urbanist;
+}
+
+
+@media screen and (min-width: 700px) {
+    #insideContent{
+        width:40vw;
+    }
+    footer>div{
+        width: 20vw;
+        margin: 0;
+    }
+}

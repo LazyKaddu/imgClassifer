@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <img src="\static\images\Logo.png" id="logoimg">
+        <nav>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <div></div>
+                <li><a href="/products">Products</a></li>
+                <div></div>
+                <li><a href="/classy">Classy</a></li>
+                <div></div>
+                <li><a href="/contact">Contact</a></li>
+                <div></div>
+                <li><a href="/blog">Blog</a></li>
+                <div></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="insideContent">
+            <h1>HERBAL LENS</h1>
+            <p>An AI/ML based aproach for classification of different medicinal plants using image processing and deep learning. Doesn't matter if you are a distributer or supplier of medicinal plant or an enthusist which is here to learn new thing- This website serves for all of you! </p>
+        </div>
+        <form id="imageForm" method="post" name="image" action="{{ url_for('result') }}" enctype="multipart/form-data">
+                <input id="inpImg" type="file" name="file" accept="image/*">
+            <button type="submit">submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

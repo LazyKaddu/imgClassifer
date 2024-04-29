@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="\static\images\Logo.png" id="logoimg">
+        <nav>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <div></div>
+                <li><a href="/products">Products</a></li>
+                <div></div>
+                <li><a href="/classy">Classy</a></li>
+                <div></div>
+                <li><a href="/contact">Contact</a></li>
+                <div></div>
+                <li><a href="/blog">Blog</a></li>
+                <div></div>
+            </ul>
+            <form id="searchForm" method="post" role="search" action="{{ url_for('results') }}" >
+                <input id="inpSearch" type="search" placeholder="Search" name="search">
+                <button type="submit" id="searchIcon"><i class="material-icons">search</i></button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <div id="insideContent">
+            <h1>HERBAL LENS</h1>
+            <p>An AI/ML based aproach for classification of different medicinal plants using image processing and deep learning. Doesn't matter if you are a distributer or supplier of medicinal plant or an enthusist which is here to learn new thing- This website serves for all of you! 
+            </p>
+            <a href="/"><button>Discover &nbsp;&nbsp;&nbsp;&gt;</button></a>
+
+            <a href="/search"><button>upload image &nbsp;&nbsp;&nbsp;&gt;</button></a>
+
+        </div>
+        <div>
+            <h1 id="acc">
+                Accuracy: 94.40%
+            </h1>
+        </div>
+        <footer>
+            <div> 
+                <img src="static\images\objimg.png" class="objimg">
+                <div>
+                    <h3>feeding</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sint.</p>
+                </div>
+            </div>
+            <div>
+                <img src="static\images\objimg.png" class="objimg">
+                <div>
+                    <h3>feeding</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sint.</p>
+                </div>
+            </div>
+            <div>
+                <img src="static\images\objimg.png" class="objimg">
+                <div>
+                    <h3>feeding</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sint.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
